@@ -13,11 +13,22 @@ export default class Song {
 
   get Template() {
     return `
-    <div onclick="app.songsController.select('${this._id}')"class="card-body">
-        <img src="${this.albumArt}" >
-        <h3>${this.album}</h1>
-        <h3>${this.title}</h1>
-   </div>
+
+    <div onclick="app.songsController.select('${this._id}')" class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="${this.albumArt}" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">${this.album}</p>
+          <p class="card-text"><small class="text-muted">${this.title}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
         `;
   }
   get playlistTemplate() {
@@ -36,18 +47,18 @@ export default class Song {
             </div>
             </div>
             `;
-          }
-          
-   get Button(){
+  }
 
-    if(this.user){
+  get Button() {
+
+    if (this.user) {
       return `
       <button type="button" class="btn btn-danger" onclick="app.playlistsController.removeSong('${this._id}')">Yeet Song</button>
       `
-    } 
-    return`
+    }
+    return `
     <button type="button" class="btn btn-success" onclick="app.songsController.addSong('${this._id}')">Add Song</button>
-    ` 
-   }       
-          
-        }
+    `
+  }
+
+}
