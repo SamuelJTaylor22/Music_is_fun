@@ -12,7 +12,10 @@ export default class Song {
 
   get Template() {
     return `
-        <h1>${this.title}</h1>
+    <div class="card-body">
+        <h3>${this.album}</h1>
+        <h3>${this.title}</h1>
+   </div>
         `;
   }
 
