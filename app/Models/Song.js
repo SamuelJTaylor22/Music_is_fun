@@ -31,6 +31,7 @@ export default class Song {
           <img class="card-img-top" src="${this.albumArt}" alt="">
           <div class="card-body">
             <h4 class="card-title">${this.title}</h4>
+            <audio controls src="${this.preview}"></audio>
             <p class="card-text">${this.price}</p>
             ${this.Button}
             </div>
