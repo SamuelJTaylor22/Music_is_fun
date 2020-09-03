@@ -12,7 +12,7 @@ export default class Song {
 
   get Template() {
     return `
-        <h1>${this.title}</h1>
+        <h1 onclick="app.songsController.select(${this._id})">${this.title}</h1>
         `;
   }
 
