@@ -24,4 +24,15 @@ export default class Song {
 
         `;
   }
+  get activeTemplate() {
+    return `
+        <div class="card">
+          <img class="card-img-top" src="${this.albumArt}" alt="">
+          <div class="card-body">
+            <h4 class="card-title">${this.title}</h4>
+            <p class="card-text">${this.price}</p>
+          </div>
+        </div>
+        `;
+  }
 }
