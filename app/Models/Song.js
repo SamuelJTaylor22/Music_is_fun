@@ -33,7 +33,21 @@ export default class Song {
   }
   get playlistTemplate() {
     return `
-          <li onclick="app.playlistsController.select('${this._id}')">${this.title}</li> 
+    <div onclick="app.playlistsController.select('${this._id}')" class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="${this.albumArt}" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">${this.album}</p>
+          <p class="card-text"><small class="text-muted">${this.title}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
         `;
   }
   get activeTemplate() {
