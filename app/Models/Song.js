@@ -21,9 +21,9 @@ export default class Song {
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">${this.album}</p>
-          <p class="card-text"><small class="text-muted">${this.title}</small></p>
+          <h5 class="card-title">${this.album}</h5>
+          <p class="card-text">${this.title}</p>
+          <p class="card-text"><small class="text-muted">${this.price}</small></p>
         </div>
       </div>
     </div>
@@ -40,9 +40,9 @@ export default class Song {
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">${this.album}</p>
-          <p class="card-text"><small class="text-muted">${this.title}</small></p>
+          <h5 class="card-title">${this.album}</h5>
+          <p class="card-text">${this.title}</p>
+          <p class="card-text"><small class="text-muted"></small></p>
         </div>
       </div>
     </div>
