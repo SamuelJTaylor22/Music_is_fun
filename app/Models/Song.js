@@ -42,11 +42,11 @@ export default class Song {
 
     if(this.user){
       return `
-      <h1>test</h1>
+      <button type="button" class="btn btn-danger" onclick="app.playlistsController.removeSong('${this._id}')">Yeet Song</button>
       `
     } 
     return`
-    <button type="button" class="btn btn-success" onclick="app.songsController.addSong(${this._id})">Add Song</button>
+    <button type="button" class="btn btn-success" onclick="app.songsController.addSong('${this._id}')">Add Song</button>
     ` 
    }       
           

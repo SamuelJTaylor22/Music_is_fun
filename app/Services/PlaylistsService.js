@@ -13,6 +13,11 @@ import Song from "../Models/Song.js";
 
 
 class PlaylistsService{
+  removeSong(id) {
+    sandBoxApi.delete(id)
+    ProxyState.playlist = ProxyState.playlist.filter(s => s._id != id)
+    
+  }
 
   constructor(){}
 

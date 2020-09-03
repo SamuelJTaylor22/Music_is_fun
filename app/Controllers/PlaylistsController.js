@@ -23,7 +23,9 @@ export default class PlaylistsController{
   select(id){
     playlistsService.select(id)
   }
-
+  removeSong(id) {
+    playlistsService.removeSong(id)
+   }
 
 
 
