@@ -12,7 +12,7 @@ export default class Song {
 
   get Template() {
     return `
-
+        <div><h1>${this.title}</h1></div>
         `;
   }
 
